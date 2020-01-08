@@ -19,7 +19,7 @@ let ruleta = new Winwheel({
 });
 function mensaje() {
     var elementoSeleccionado = ruleta.getIndicatedSegment();
-    Swal.fire('Te tocó ' +  elementoSeleccionado.text );
+    Swal.fire('Te tocó ' + elementoSeleccionado.text);
     ruleta.stopAnimation(false);
     ruleta.rotationAngle = 0;
     ruleta.draw();

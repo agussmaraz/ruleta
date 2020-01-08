@@ -18,3 +18,36 @@
 canvas {
     overflow-wrap: break-word;
 }
+.form-comidas {
+    width: 30%;
+    margin: 0 20px;
+}
+.icon {
+    font-size: 20px;
+}
+.crud {
+    width: 50%;
+    margin: 0 auto;
+    border: solid rgb(202, 202, 202) 2px;
+}
+.lista{
+    height:400px;
+    width:50%;
+    border: solid rgb(228, 225, 225) 2px;
+    margin: 0 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-inline-start: 5px !important; 
+    
+}
+.lista{
+    overflow-y:scroll;
+    list-style-type:none;
+}
+.caja-armar {
+    display: flex;
+    /* justify-content: center; */
+}
+
+

@@ -6,8 +6,14 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+
 class User extends Authenticatable
 {
+
+    public function comida(){ 
+        return $this->hasMany('App\Comida');
+    }
+
     use Notifiable;
 
     /**
