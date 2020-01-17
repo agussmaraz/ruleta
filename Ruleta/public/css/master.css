@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     flex-flow: column;
+    margin: 0 auto;
 }
 .boton-girar {
     background-color: red;
@@ -17,6 +18,7 @@
 }
 canvas {
     overflow-wrap: break-word;
+    /* margin: 0 auto; */
 }
 .form-comidas {
     width: 30%;
@@ -25,8 +27,15 @@ canvas {
 .icon {
     font-size: 20px;
 }
+.icono {
+    color: white;
+    font-size: 24px;
+}
+.cat-sidebar {
+    font-size: 12px;
+}
 .crud {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     border: solid rgb(202, 202, 202) 2px;
 }
@@ -49,5 +58,106 @@ canvas {
     display: flex;
     /* justify-content: center; */
 }
+li {
+    list-style-type:none;  
+}
+.nuevo {
+    background-color: yellow;
+    text-align: center;
+    /* border-radius: 8px; */
+}
+.espera {
+    background-color: rgb(197, 221, 241);
+    text-align: center;
+}
+.aprobado {
+    background-color: rgb(144, 219, 147);
+    text-align: center;
+}
+.rechazado {
+    background-color: rgb(190, 119, 119);
+    text-align: center;
+}
+.btn {
+    font-size: 15px;
+    color: white;
+    padding: 0 !important;
+}
+.editar {
+    color: black;
+}
+.editar:hover {
+    color: black;
+}
+button {
+    border: none;
+    background-color: white;
+}
+.buscar {
+    padding: 3px !important;
+}
+.cajaForm {
+    border: solid rgb(179, 179, 179) 1px;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 3px;
+}
+.enviarAdmin {
+    padding: 5px !important;
+}
 
-
+.sidebar {
+    width: 90px !important;
+    background-color: #212529;
+    min-height: calc(100vh - 56px);
+  }
+  
+  .sidebar .nav-item:last-child {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar .nav-item .nav-link {
+    text-align: center;
+    padding: 0.75rem 1rem;
+    width: 90px;
+  }
+  
+  .sidebar .nav-item .nav-link span {
+    font-size: 0.65rem;
+    display: block;
+  }
+  
+  .sidebar .nav-item .dropdown-menu {
+    position: absolute !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    left: calc(90px + 0.5rem) !important;
+    margin: 0;
+  }
+  
+  .sidebar .nav-item .dropdown-menu.dropup {
+    bottom: 0;
+    top: auto !important;
+  }
+  
+  .sidebar .nav-item.dropdown .dropdown-toggle::after {
+    display: none;
+  }
+  
+  .sidebar .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .sidebar .nav-item .nav-link:active, .sidebar .nav-item .nav-link:focus, .sidebar .nav-item .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .sidebar.toggled {
+    width: 0 !important;
+    overflow: hidden;
+  }
+  .caja-principal {
+      display: flex;
+      /* justify-content: space-between; */
+  }

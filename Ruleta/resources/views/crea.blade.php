@@ -21,14 +21,31 @@
     <canvas id="canvas2" width="400" height="400"> </canvas>
   </div>
 </section>
-
+<button onClick="deleteSegment()">Delete Segment</button>
 
 <h1> Agregar nuevos platos </h1>
 <form method="POST" class="form-comidas">
+  @if ($errors)
+  <ul class="errors">
+    @foreach ($errors->all() as $error)
+    <li class="alert alert-danger w-100" role="alert">{{$error}}</li>
+    @endforeach
+  </ul>
+  @endif
   @csrf
   <div class="form-group">
     <label for="exampleInputEmail1"> Plato de comida </label>
     <input type="text" name="comida" class="form-control">
+  </div>
+  <div>
+    <label for="" name="select"> Categoria </label>
+    <select name="categoria" id=""> 
+      <option value="2"> Vegetariano</option>
+      <option value="3"> Vegano</option>
+      <option value="4"> Celiaco</option>
+      <option value="1"> De todo</option>
+    </select>
+    
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
@@ -84,5 +101,12 @@
     ctx.stroke();
     ctx.fill();
   };
-  </script>
-  @endsection
+  
+  
+  function deleteSegment(){
+    ruleta2.deleteSegment();
+    ruleta2.draw()
+  }
+  
+</script>
+@endsection

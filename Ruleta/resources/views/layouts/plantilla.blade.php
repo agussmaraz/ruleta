@@ -1,4 +1,5 @@
 @include('partials.head')
 @include('partials.navbar')
+@include('flash-message')
 @yield('contenido')
 @include('partials.footer')
